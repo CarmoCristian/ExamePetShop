@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adotar um Pet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container m-5">
+        <h2>Adotar um Pet</h2>
+        <form method="POST" action='/adotarPet' class="border p-3 needs-validation" novalidate>
+            <div class="mb-3">
+                <label for="interessado" class="form-label">Interessado:</label>
+                <input class="form-select" id="interessado" name="interessado" required>
+            </div>
+            <div class="mb-3">
+                <label for="pet" class="form-label">Pet:</label>
+                <input class="form-select" id="pet" name="pet" required>
+            </div>
+            <button class="btn btn-primary" type="submit">Registrar Adoção</button>
+            <a class="btn btn-secondary" href="/">Voltar</a>
+        </form>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</html>
